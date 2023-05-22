@@ -12,4 +12,4 @@ metadata:
   labels:
     app.kubernetes.io/component: backend-api
   name: {{ .Release.Name }}-api
-  namespace: ingress-nginx
+  namespace: {{ env.k8s.namespace }}
