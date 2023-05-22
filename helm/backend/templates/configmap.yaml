@@ -12,4 +12,3 @@ metadata:
   labels:
     app.kubernetes.io/component: backend-api
   name: {{ .Release.Name }}-api
-  namespace: {{ env.k8s.namespace }}
