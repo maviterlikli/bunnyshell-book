@@ -2,10 +2,9 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: {{ .Values.ingress.host }}
-  namespace: sandbox
 spec:
   # Secret names are always required.
-  secretName: example-com-tls
+  secretName: {{ .Values.ingress.host }}
 
   # secretTemplate is optional. If set, these annotations and labels will be
   # copied to the Secret named example-com-tls. These labels and annotations will
