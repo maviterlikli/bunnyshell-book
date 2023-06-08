@@ -17,4 +17,9 @@ spec:
             name: frontend
             port:
               number: 80
+  tls:
+  - hosts:
+    - frontend.example.com
+    secretName: frontend.example.com
+
 
